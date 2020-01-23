@@ -1,7 +1,0 @@
-C:\Users\Serhii_Svintsitskyi\source\repos\BookShop\BookShop\BookShopModels\bin\Debug\netcoreapp3.1\BookShopModels.deps.json
-C:\Users\Serhii_Svintsitskyi\source\repos\BookShop\BookShop\BookShopModels\bin\Debug\netcoreapp3.1\BookShopModels.dll
-C:\Users\Serhii_Svintsitskyi\source\repos\BookShop\BookShop\BookShopModels\obj\Debug\netcoreapp3.1\BookShopModels.AssemblyInfoInputs.cache
-C:\Users\Serhii_Svintsitskyi\source\repos\BookShop\BookShop\BookShopModels\obj\Debug\netcoreapp3.1\BookShopModels.AssemblyInfo.cs
-C:\Users\Serhii_Svintsitskyi\source\repos\BookShop\BookShop\BookShopModels\bin\Debug\netcoreapp3.1\BookShopModels.pdb
-C:\Users\Serhii_Svintsitskyi\source\repos\BookShop\BookShop\BookShopModels\obj\Debug\netcoreapp3.1\BookShopModels.dll
-C:\Users\Serhii_Svintsitskyi\source\repos\BookShop\BookShop\BookShopModels\obj\Debug\netcoreapp3.1\BookShopModels.pdb
