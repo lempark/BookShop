@@ -11,7 +11,7 @@ using Data;
 namespace BookShop.Controllers
 {
     [ApiController]
-    [Route("api/[BooksApi]")]
+    [Route("api/[BooksController]")]
     public class BooksController : Controller
     {
         private BookShopContext dbContext;
