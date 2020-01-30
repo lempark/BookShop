@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using Microsoft.EntityFrameworkCore;
+using BookShop.Models;
 
 namespace Data
 {
@@ -18,5 +19,6 @@ namespace Data
         }
 
         public DbSet<Book> Books { get; set; }   
+        public DbSet<User> Users { get; set; }
     }
 }
