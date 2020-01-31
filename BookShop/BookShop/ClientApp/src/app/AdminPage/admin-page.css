@@ -1,0 +1,28 @@
+.books-table td {
+  font-size: 18px;
+}
+.books-table
+{
+    
+}
+.books-table tr
+{
+    display:flex;
+    
+}
+#theader {
+  font-size: 20px;
+  font-weight: 600;
+  background-color: beige;
+  
+}
+.books-table th, td {
+    width:180px;
+    padding:10px 0px 10px 0px;
+  text-align:center;
+  vertical-align:center;
+}
+.btn-delete{
+    border-radius:10px;
+    background-color:crimson;
+}

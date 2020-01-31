@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+  <table class="books-table">
+    <tr id="theader">
+      <th>Book name</th>
+      <th>Author</th>
+      <th>Price</th>
+    </tr>
+    <tr *ngFor="let book of books">
+      <td>{{ book.name }}</td>
+      <td>{{ book.author }}</td>
+      <td>{{ book.price }} $</td>
+      <td>
+        <input type="button" value="Удалить" (click)="deleteBook(book)" class="btn-delete" />
+      </td>
+    </tr>
+  </table>
+  
+</body>
+</html>

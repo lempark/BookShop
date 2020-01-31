@@ -9,7 +9,8 @@ import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
-import {ShowCaseComponent} from './Showcase/showcase-component'
+import { ShowCaseComponent } from './Showcase/showcase-component'
+import { AdminPageComponent} from './AdminPage/adminPage-component'
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {ShowCaseComponent} from './Showcase/showcase-component'
     HomeComponent,
     CounterComponent,
     FetchDataComponent,
-    ShowCaseComponent
+    ShowCaseComponent,
+    AdminPageComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -26,7 +28,9 @@ import {ShowCaseComponent} from './Showcase/showcase-component'
     FormsModule,
     RouterModule.forRoot([
       
-      { path: '', component: ShowCaseComponent, pathMatch: 'full' }
+      { path: '', component: ShowCaseComponent, pathMatch: 'full' },
+      {path: '/admin-page', component: AdminPageComponent}
+      
       
     ])
   ],
