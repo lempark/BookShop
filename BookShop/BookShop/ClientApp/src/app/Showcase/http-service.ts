@@ -11,7 +11,7 @@ export class BookService {
   basUrl:string
   constructor(private http: HttpClient, @Inject('BASE_URL') baseUrl: string){this.basUrl = baseUrl}
 
-  private booksUrl = this.basUrl + '/api/Books'
+  private booksUrl =  'api/Books'
 
   getBooks(): Observable<Book[]> {
     return this.http.get<Book[]>(this.booksUrl)

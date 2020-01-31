@@ -20,8 +20,8 @@ namespace BookShop.Controllers
         public BooksController(BookShopContext context)
         {
             dbContext = context;
-            dbContext.Books.Add(new Book() { Author = "some man", Name = "some name", Price = 24 });
-            dbContext.Books.Add(new Book() { Author = "some mvvvan", Name = "some navvvme", Price = 34 });
+            
+            
         }
 
         // GET: api/<controller>

@@ -13,7 +13,7 @@ export class ShowCaseComponent  {
   books: Book[] = [];
   
   constructor(private http: HttpClient, @Inject('BASE_URL') baseUrl: string) {
-     this.http.get<Book[]>(baseUrl +'/api/Books').subscribe(result => {
+     this.http.get<Book[]>(baseUrl +'api/Books').subscribe(result => {
       this.books = result;
     }, error => console.error(error));
   }

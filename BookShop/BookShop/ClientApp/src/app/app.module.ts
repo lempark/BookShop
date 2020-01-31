@@ -29,7 +29,7 @@ import { AdminPageComponent} from './AdminPage/adminPage-component'
     RouterModule.forRoot([
       
       { path: '', component: ShowCaseComponent, pathMatch: 'full' },
-      {path: '/admin-page', component: AdminPageComponent}
+      {path: 'admin-page', component: AdminPageComponent}
       
       
     ])
