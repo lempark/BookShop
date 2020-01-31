@@ -26,3 +26,7 @@
     border-radius:10px;
     background-color:crimson;
 }
+.book-image {
+  height: 120px;
+  width: 120px;
+}

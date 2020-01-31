@@ -19,9 +19,7 @@ namespace BookShop.Controllers
 
         public BooksController(BookShopContext context)
         {
-            dbContext = context;
-            
-            
+            dbContext = context;            
         }
 
         // GET: api/<controller>

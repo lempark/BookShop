@@ -9,7 +9,7 @@ namespace Data
     public class BookShopContext : DbContext
     {
         public BookShopContext(DbContextOptions<BookShopContext> options) : base(options)
-        {
+        { 
             Database.EnsureCreated();
         }
 

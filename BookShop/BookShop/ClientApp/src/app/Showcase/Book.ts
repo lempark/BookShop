@@ -3,4 +3,5 @@ export class Book {
   price: number;
   name: string;
   authorName: string;
+  photoUrl: string;
 }
