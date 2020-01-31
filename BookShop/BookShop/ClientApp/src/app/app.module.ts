@@ -25,10 +25,9 @@ import {ShowCaseComponent} from './Showcase/showcase-component'
     HttpClientModule,
     FormsModule,
     RouterModule.forRoot([
-      { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: 'counter', component: CounterComponent },
-      { path: 'fetch-data', component: FetchDataComponent },
-      {path: 'show-case' , component: ShowCaseComponent}
+      
+      { path: '', component: ShowCaseComponent, pathMatch: 'full' }
+      
     ])
   ],
   providers: [],

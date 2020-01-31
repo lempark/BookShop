@@ -53,6 +53,8 @@ namespace BookShop
                 configuration.RootPath = "ClientApp/dist";
             });
 
+            
+
             services.AddDbContext<BookShopContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
         }
 

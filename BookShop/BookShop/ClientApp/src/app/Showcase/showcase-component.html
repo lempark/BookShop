@@ -5,11 +5,18 @@
     <title></title>
 </head>
 <body>
-  <ul>
-    < li *ngFor="let book of books">
-    <p>Имя пользователя: {{ user?.name }}</p>
-    < p > Возраст пользователя: {{ user?.age }}</p>
-    </li>
-  </ul>
+  <table class="books-table">
+    <tr id="theader">
+      <th>Book name</th>
+      <th>Author</th>
+      <th>Price</th>
+    </tr>
+    <tr *ngFor="let book of books">
+      <td>{{ book.name }}</td>
+      <td>{{ book.author }}</td>
+      <td>{{ book.price }} $</td>
+    </tr>
+  </table>
+  
 </body>
 </html>

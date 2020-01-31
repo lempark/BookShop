@@ -13,11 +13,6 @@ namespace Data
             Database.EnsureCreated();
         }
 
-        public BookShopContext()
-        {
-            Database.EnsureCreated();
-        }
-
         public DbSet<Book> Books { get; set; }   
         public DbSet<User> Users { get; set; }
     }

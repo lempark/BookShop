@@ -1,0 +1,23 @@
+.books-table td {
+  font-size: 18px;
+}
+.books-table
+{
+    width:100%;
+}
+.books-table tr
+{
+    display:flex;
+    justify-content:space-between;
+}
+#theader {
+  font-size: 20px;
+  font-weight: 600;
+  background-color: beige;
+  
+}
+.books-table th, td {
+    padding:10px 0px 10px 0px;
+  text-align:center;
+  vertical-align:center;
+}

@@ -1,18 +1,20 @@
-import { HttpService } from './http-service';
-import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Component, OnInit , Inject } from '@angular/core';
 import { Book} from './Book'
 
 @Component({
   selector: 'app-showcase',
-  templateUrl:'./showcase-component.html' ,
-  providers: [HttpService]
-})
-export class ShowCaseComponent implements OnInit {
+  templateUrl: './showcase-component.html',
+  styleUrls: ['./showcase.css']
+})  
+export class ShowCaseComponent  {
   books: Book[] = [];
-  constructor(private httpService: HttpService) { }
 
-  ngOnInit() {
-
-    this.httpService.getBooks().subscribe(data => this.books = data);
+  constructor(private http: HttpClient, @Inject('BASE_URL') baseUrl: string) {
+    http.get<Book[]>(baseUrl + 'api/Books').subscribe(result => {
+      this.books = result;
+    }, error => console.error(error));
   }
+
+  
 }

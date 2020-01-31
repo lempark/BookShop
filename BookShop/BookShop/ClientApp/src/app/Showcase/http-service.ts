@@ -10,7 +10,7 @@ export class HttpService {
 
   constructor(private http: HttpClient) { }
 
-  private booksUrl = 'api/Books'
+  private booksUrl = '/api/Books'
 
   getBooks(): Observable<Book[]> {
     return this.http.get<Book[]>(this.booksUrl)

@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\BookShop"
+    "\\BookShop",
+    "\\BookShop\\BookShop"
   ],
   "SelectedNode": "\\BookShop\\BookShop.sln",
   "PreviewInSolutionExplorer": false

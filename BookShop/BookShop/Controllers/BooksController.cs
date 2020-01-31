@@ -12,7 +12,7 @@ using BookShop.Models;
 namespace BookShop.Controllers
 {
     [ApiController]
-    [Route("api/[BooksController]")]
+    [Route("api/[controller]")]
     public class BooksController : Controller
     {
         private BookShopContext dbContext;
