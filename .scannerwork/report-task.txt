@@ -3,5 +3,5 @@ projectKey=lempark_EpamTrainings
 serverUrl=https://sonarcloud.io
 serverVersion=8.0.0.4292
 dashboardUrl=https://sonarcloud.io/dashboard?id=lempark_EpamTrainings
-ceTaskId=AXAHhP1lpEmUwKcVXGPl
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXAHhP1lpEmUwKcVXGPl
+ceTaskId=AXAH3JCjaESfLvXaY2UT
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXAH3JCjaESfLvXaY2UT
