@@ -1,7 +1,0 @@
-organization=lempark
-projectKey=lempark_BookShop
-serverUrl=https://sonarcloud.io
-serverVersion=8.0.0.4292
-dashboardUrl=https://sonarcloud.io/dashboard?id=lempark_BookShop
-ceTaskId=AXAHEDDBT-ISs40v4Iif
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXAHEDDBT-ISs40v4Iif

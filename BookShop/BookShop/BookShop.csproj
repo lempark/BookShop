@@ -46,7 +46,7 @@
   <ItemGroup>
     <TypeScriptCompile Include="ClientApp\src\app\AdminPage\adminPage-component.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\models\Book.ts" />
-    <TypeScriptCompile Include="ClientApp\src\app\Showcase\http-service.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\http-service\http-service.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\Showcase\showcase-component.ts" />
   </ItemGroup>
 

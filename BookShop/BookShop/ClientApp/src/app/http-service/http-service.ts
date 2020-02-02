@@ -1,5 +1,5 @@
 import { Injectable , Inject} from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient , HttpParams} from '@angular/common/http';
 import { Book } from '../models/Book'
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
@@ -9,7 +9,7 @@ import { map } from 'rxjs/operators';
 export class BookService {
 
   basUrl:string
-  constructor(private http: HttpClient, @Inject('BASE_URL') baseUrl: string){this.basUrl = baseUrl}
+  constructor(private http: HttpClient){}
 
   private booksUrl =  'api/Books'
 
@@ -17,7 +17,17 @@ export class BookService {
     return this.http.get<Book[]>(this.booksUrl)
   }
 
+  createBook(book: Book) {
+    return this.http.post(this.booksUrl , book);
+  }
+
+  editBook(id: number, book: Book) {
+    const bookParams = new HttpParams().set("id", id.toString());
+    return this.http.put(this.booksUrl, book, { params: bookParams });
+  }
+
   deleteBook(id: number) {
     return this.http.delete(this.booksUrl + '/' + id);
   }
+
 }

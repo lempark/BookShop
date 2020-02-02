@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit , Inject } from '@angular/core';
 import { Book } from '../models/Book'
-import { BookService} from './http-service'
+import { BookService} from '../http-service/http-service'
 
 @Component({
   selector: 'app-showcase',
