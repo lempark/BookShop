@@ -1,0 +1,7 @@
+organization=lempark
+projectKey=lempark_EpamTrainings
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.4292
+dashboardUrl=https://sonarcloud.io/dashboard?id=lempark_EpamTrainings
+ceTaskId=AXAHhP1lpEmUwKcVXGPl
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXAHhP1lpEmUwKcVXGPl

@@ -5,6 +5,7 @@
     <title></title>
 </head>
 <body>
+  <input type="button" value="Додати" class="bttn-add" (click)="createBook()" />
   <table class="books-table">
     <tr id="theader">
       <th id="photo-header">Photo</th>
@@ -13,15 +14,43 @@
       <th id="price">Price</th>
     </tr>
     <tr *ngFor="let book of books">
-      <td id="photo"> <img class="book-image" src="{{book.photoUrl}}" alt="book-image" /> </td>
-      <td id="name">{{ book.name }}</td>
-      <td id="author">{{ book.author }}</td>
-      <td id="price">{{ book.price }} $</td>
-      <td id="delete-button">
-        <input type="button" value="Удалить" (click)="deleteBook(book)" class="btn-delete" />
-      </td>
+      <ng-template [ngTemplateOutlet]="loadTemplate(book)"
+                   [ngTemplateOutletContext]="{ $implicit: book}">
+      </ng-template>
     </tr>
   </table>
-  
+  <ng-template #readOnlyTemplate let-book>
+    <td id="photo"> <img class="book-image" src="{{book.photoUrl}}" alt="book-image" /> </td>
+    <td id="name">{{ book.name }}</td>
+    <td id="author">{{ book.author }}</td>
+    <td id="price">{{ book.price }} $</td>
+    <td id="edite-button">
+      <input type="button" value="Змінити" (click)="editeBook(book)" class="btton"/>
+    </td>
+    <td id="delete-button">
+      <input type="button" value="Видалити" (click)="deleteBook(book)" class="btn" />
+    </td>
+  </ng-template>
+  <ng-template #editTemplate>
+    <td id="photo-input">
+      <input type="text" [(ngModel)]="editedBook.photoUrl"  class="form-control" />
+    </td>
+    <td id="name-input">
+      <input type="text" [(ngModel)]="editedBook.name" class="form-control" />
+    </td>
+    <td id="author-input">
+      <input type="text" [(ngModel)]="editedBook.author" class="form-control" />
+    </td>
+    <td id="price-input">
+      <input type="number" [(ngModel)]="editedBook.price" class="form-control" />
+    </td>
+    <td id="save-bttn">
+      <input type="button" value="Зберегти" (click)="saveBook()" class="btton" />
+    </td>
+    <td id="cancel-bttn">
+      <input type="button" value="Відмінити" (click)="cnacelEditing()" class="btn" />
+    </td>
+
+  </ng-template>
 </body>
 </html>

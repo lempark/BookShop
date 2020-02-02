@@ -18,9 +18,21 @@
   text-align:center;
   vertical-align:central;
 }
-.btn-delete{
+.btton {
+  border-radius:10px;
+  background-color: lightgreen;
+}
+.btn{
     border-radius:10px;
     background-color:crimson;
+}
+.bttn-add {
+  border-radius: 10px;
+  background-color:lightgreen;
+}
+.form-controll
+{
+    border-radius:15px;
 }
 .book-image {
   height: 120px;

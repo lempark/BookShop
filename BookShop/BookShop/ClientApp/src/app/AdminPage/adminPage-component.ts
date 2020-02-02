@@ -1,7 +1,7 @@
 import { TemplateRef, ViewChild } from '@angular/core';
-import { Component, OnInit, Inject } from '@angular/core';
+import { Component} from '@angular/core';
 import { Book } from '../models/Book'
-import { BookService } from '../http-service/http-service'
+import { BookService } from '../services/http-service'
 
 
 @Component({
@@ -35,13 +35,14 @@ export class AdminPageComponent {
   }
 
   createBook() {
-  this.editedBook = new Book(0,0,"","", "");
+  this.editedBook = new Book(0,"","","",0);
   this.books.push(this.editedBook);
   this.isNewRecord = true;
 }
 
   editeBook(book: Book) {
-    this.editedBook = new Book(book.id, book.price, book.name, book.authorName, book.photoUrl);
+    this.editedBook = new Book(book.id, book.photoUrl, book.name, book.author, book.price);
+    
   }
 
   loadTemplate(book:Book) {
