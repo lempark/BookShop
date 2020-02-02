@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <title></title>
@@ -7,17 +7,17 @@
 <body>
   <table class="books-table">
     <tr id="theader">
-      <th>Photo</th>
-      <th>Book name</th>
-      <th>Author</th>
-      <th>Price</th>
+      <th id="photo-header">Photo</th>
+      <th id="name-header">Book name</th>
+      <th id="author-header">Author</th>
+      <th id="price">Price</th>
     </tr>
     <tr *ngFor="let book of books">
-      <td> <img class="book-image" src="{{book.photoUrl}}" /> </td>
-      <td>{{ book.name }}</td>
-      <td>{{ book.author }}</td>
-      <td>{{ book.price }} $</td>
-      <td>
+      <td id="photo"> <img class="book-image" src="{{book.photoUrl}}" alt="book-image" /> </td>
+      <td id="name">{{ book.name }}</td>
+      <td id="author">{{ book.author }}</td>
+      <td id="price">{{ book.price }} $</td>
+      <td id="delete-button">
         <input type="button" value="Удалить" (click)="deleteBook(book)" class="btn-delete" />
       </td>
     </tr>
